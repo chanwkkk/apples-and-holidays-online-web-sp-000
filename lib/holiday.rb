@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |season,holiday_details|
   puts season.to_s.capitalize+":"
   holiday_details.each do |holiday_name,supplies|
-    splitvalue=holiday_name.split('')
+    splitvalue=holiday_name.to_s.split('')
     if splitvalue.include?("_")
     namearray=holiday_name.split("_")
     namearray.each {|name|name.capitalize!}
