@@ -62,7 +62,7 @@ holiday_hash.each do |season,holiday_details|
   holiday_details.each do |holiday_name,supplies|
     splitvalue=holiday_name.to_s.split('')
     if splitvalue.include?("_")
-    namearray=holiday_name.split("_")
+    namearray=holiday_name.to_s.split("_")
     namearray.each {|name|name.capitalize!}
     new_name=namearray.join(" ")
 
