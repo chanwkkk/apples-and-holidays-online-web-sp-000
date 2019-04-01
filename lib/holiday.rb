@@ -81,7 +81,7 @@ holiday_hash.each do |season,holiday_details|
   BBQ_array=[]
   holiday_details.each do |holidays,supplies|
     if supplies.include?("BBQ")
-    holidays
+    BBQ_array<<holidays
   end
 end
 end
