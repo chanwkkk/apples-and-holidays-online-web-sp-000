@@ -81,6 +81,6 @@ holiday_hash.each do |season,holiday_details|
   holiday_details.each do |holidays,supplies|
     supplies.include?("BBQ")
     return holidays
-
+end
 end
 end
